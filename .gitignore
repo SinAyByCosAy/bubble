@@ -1,0 +1,5 @@
+node_modules
+encryption
+public/img/screenshot
+nodemon.json
+.DS_Store

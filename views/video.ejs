@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title><%= name %></title>
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/video/bubble.css">
+    <link rel="stylesheet" href="css/video/chart.css">
+    <link rel="stylesheet" href="css/video/videojs.css">
+    <link rel="stylesheet" href="css/video/videojs-overlay.css">
+    
+    
+
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <script data-main="js/bot-web-view" src="js/lib/require.js"></script>
+
+
+
+</head>
+
+<body id="page-top" class="index">
+    <div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
+
+    <!-- timeline Grid Section -->
+    <section id="timeline-container">
+          <video id="videojs-overlay-player" 
+          height="480" 
+          class="video-js vjs-default-skin" 
+          controls data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=KxPYCu9JzSs"}] }'>
+         </video>
+    </section>
+
+    <section id="events-container">
+       
+    </section>
+
+</body>
+</html>

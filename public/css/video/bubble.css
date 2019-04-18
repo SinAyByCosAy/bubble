@@ -1,0 +1,971 @@
+/*!
+ * Start Bootstrap - Freelancer v3.3.7+1 (http://startbootstrap.com/template-overviews/freelancer)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    overflow-x: hidden;
+    background: none;
+}
+
+p {
+    font-size: 20px;
+}
+
+p.small {
+    font-size: 16px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    color: #18BC9C;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+hr.star-light,
+hr.star-primary {
+    padding: 0;
+    border: none;
+    border-top: solid 5px;
+    text-align: center;
+    max-width: 250px;
+    margin: 25px auto 30px;
+}
+
+hr.star-light:after,
+hr.star-primary:after {
+    content: "\f005";
+    font-family: FontAwesome;
+    display: inline-block;
+    position: relative;
+    top: -0.8em;
+    font-size: 2em;
+    padding: 0 0.25em;
+}
+
+hr.star-light {
+    border-color: white;
+}
+
+hr.star-light:after {
+    background-color: #000;
+    color: white;
+}
+
+hr.star-primary {
+    border-color: #2C3E50;
+}
+
+hr.star-primary:after {
+    background-color: white;
+    color: #2C3E50;
+}
+
+.img-centered {
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    background: #000;
+    color: white;
+}
+
+header .container {
+    padding-top: 100px;
+    /*padding-bottom: 50px;*/
+}
+
+header img {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+header .intro-text .name {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+header .intro-text .trending-name {
+    display: block;
+    font-weight: 700;
+    font-size: 2em;
+    text-transform: none;
+}
+
+header .intro-text .skills {
+    font-size: 1.25em;
+    font-weight: 300;
+}
+
+@media (min-width: 768px) {
+    header .container {
+        padding-top: 200px;
+        /*padding-bottom: 100px;*/
+    }
+    header .intro-text .name {
+        font-size: 4.75em;
+    }
+    header .intro-text .skills {
+        font-size: 1.75em;
+    }
+}
+
+.navbar-custom {
+    background: black;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+}
+
+.navbar-custom .navbar-brand {
+    color: white;
+}
+
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus,
+.navbar-custom .navbar-brand:active,
+.navbar-custom .navbar-brand.active {
+    color: white;
+}
+
+.navbar-custom .navbar-nav {
+    letter-spacing: 1px;
+}
+
+.navbar-custom .navbar-nav li a {
+    color: white;
+}
+
+.navbar-custom .navbar-nav li a:hover {
+    color: #18BC9C;
+}
+
+.navbar-custom .navbar-nav li a:focus,
+.navbar-custom .navbar-nav li a:active {
+    color: white;
+}
+
+.navbar-custom .navbar-nav li.active a {
+    color: white;
+    background: #18BC9C;
+}
+
+.navbar-custom .navbar-nav li.active a:hover,
+.navbar-custom .navbar-nav li.active a:focus,
+.navbar-custom .navbar-nav li.active a:active {
+    color: white;
+    background: #18BC9C;
+}
+
+.navbar-custom .navbar-toggle {
+    color: white;
+    text-transform: uppercase;
+    font-size: 10px;
+    border-color: white;
+}
+
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+    background-color: #18BC9C;
+    color: white;
+    border-color: #18BC9C;
+}
+
+@media (min-width: 768px) {
+    .navbar-custom {
+        padding: 25px 0;
+        -webkit-transition: padding 0.3s;
+        -moz-transition: padding 0.3s;
+        transition: padding 0.3s;
+    }
+    .navbar-custom .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    .navbar-custom.affix {
+        padding: 10px 0;
+    }
+    .navbar-custom.affix .navbar-brand {
+        font-size: 1.5em;
+    }
+}
+
+section {
+    /* padding: 50px 0; */
+}
+
+section h2 {
+    margin: 0;
+    font-size: 3em;
+}
+
+section.success {
+    background: #18BC9C;
+    color: white;
+}
+
+@media (max-width: 767px) {
+    section {
+        /* padding: 75px 0; */
+    }
+    section.first {
+        padding-top: 75px;
+    }
+}
+
+.ui-data-element {
+    cursor: pointer;
+}
+
+.trending-cards {
+    background: rgba(43, 61, 79, 0.5);
+    padding: 20px;
+    border-radius: 2%;
+    margin-bottom: 20px;
+    min-height: 211px;
+}
+
+#pointing-team {
+    background: black;
+    padding-top: 20px;
+    /*padding-bottom: 0px;*/
+}
+
+#pointing-player {
+    background: white;
+}
+
+.trending-up-arrow {
+    margin-right: auto;
+    margin-left: auto;
+    border-color: white transparent;
+    border-style: solid;
+    border-width: 0px 30px 30px 30px;
+    height: 0px;
+    width: 0px;
+}
+
+#pointing-team .up-arrow {
+    margin-right: auto;
+    margin-left: auto;
+    border-color: white transparent;
+    border-style: solid;
+    border-width: 0px 90px 90px 90px;
+    height: 0px;
+    width: 0px;
+}
+
+#pointing-player .up-arrow {
+    margin-right: auto;
+    margin-left: auto;
+    border-color: black transparent;
+    border-style: solid;
+    border-width: 0px 90px 90px 90px;
+    height: 0px;
+    width: 0px;
+}
+
+#timeline .timeline-item {
+    margin: 0 0 15px;
+    right: 0;
+}
+
+#timeline .timeline-item .timeline-link {
+    display: block;
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#timeline .timeline-item .timeline-link .caption {
+    background: rgba(24, 188, 156, 0.9);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+}
+
+#timeline .timeline-item .timeline-link .caption:hover {
+    opacity: 1;
+}
+
+#timeline .timeline-item .timeline-link .caption .caption-content {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    font-size: 20px;
+    text-align: center;
+    top: 50%;
+    margin-top: -12px;
+    color: white;
+}
+
+#timeline .timeline-item .timeline-link .caption .caption-content i {
+    margin-top: -12px;
+}
+
+#timeline .timeline-item .timeline-link .caption .caption-content h3,
+#timeline .timeline-item .timeline-link .caption .caption-content h4 {
+    margin: 0;
+}
+
+#timeline * {
+    z-index: 2;
+}
+
+@media (min-width: 767px) {
+    #timeline .timeline-item {
+        margin: 0 0 30px;
+    }
+}
+
+.floating-label-form-group {
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.floating-label-form-group input,
+.floating-label-form-group textarea {
+    z-index: 1;
+    position: relative;
+    padding-right: 0;
+    padding-left: 0;
+    border: none;
+    border-radius: 0;
+    font-size: 1.5em;
+    background: none;
+    box-shadow: none !important;
+    resize: none;
+}
+
+.floating-label-form-group label {
+    display: block;
+    z-index: 0;
+    position: relative;
+    top: 2em;
+    margin: 0;
+    font-size: 0.85em;
+    line-height: 1.764705882em;
+    vertical-align: middle;
+    vertical-align: baseline;
+    opacity: 0;
+    -webkit-transition: top 0.3s ease, opacity 0.3s ease;
+    -moz-transition: top 0.3s ease, opacity 0.3s ease;
+    -ms-transition: top 0.3s ease, opacity 0.3s ease;
+    transition: top 0.3s ease, opacity 0.3s ease;
+}
+
+.floating-label-form-group:not(:first-child) {
+    padding-left: 14px;
+    border-left: 1px solid #eeeeee;
+}
+
+.floating-label-form-group-with-value label {
+    top: 0;
+    opacity: 1;
+}
+
+.floating-label-form-group-with-focus label {
+    color: #18BC9C;
+}
+
+form .row:first-child .floating-label-form-group {
+    border-top: 1px solid #eeeeee;
+}
+
+footer {
+    color: white;
+}
+
+footer h3 {
+    margin-bottom: 30px;
+}
+
+footer .footer-above {
+    padding-top: 50px;
+    background-color: #2C3E50;
+}
+
+footer .footer-col {
+    margin-bottom: 50px;
+}
+
+footer .footer-below {
+    padding: 25px 0;
+    background-color: #233140;
+}
+
+.btn-outline {
+    color: white;
+    font-size: 20px;
+    border: solid 2px white;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+    margin-top: 15px;
+}
+
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active,
+.btn-outline.active {
+    color: #18BC9C;
+    background: white;
+    border: solid 2px white;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #2C3E50;
+    border-color: #2C3E50;
+    font-weight: 700;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    color: white;
+    background-color: #1a242f;
+    border-color: #161f29;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    background-image: none;
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+    background-color: #2C3E50;
+    border-color: #2C3E50;
+}
+
+.btn-primary .badge {
+    color: #2C3E50;
+    background-color: white;
+}
+
+.btn-success {
+    color: white;
+    background-color: #18BC9C;
+    border-color: #18BC9C;
+    font-weight: 700;
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active,
+.open .dropdown-toggle.btn-success {
+    color: white;
+    background-color: #128f76;
+    border-color: #11866f;
+}
+
+.btn-success:active,
+.btn-success.active,
+.open .dropdown-toggle.btn-success {
+    background-image: none;
+}
+
+.btn-success.disabled,
+.btn-success[disabled],
+fieldset[disabled] .btn-success,
+.btn-success.disabled:hover,
+.btn-success[disabled]:hover,
+fieldset[disabled] .btn-success:hover,
+.btn-success.disabled:focus,
+.btn-success[disabled]:focus,
+fieldset[disabled] .btn-success:focus,
+.btn-success.disabled:active,
+.btn-success[disabled]:active,
+fieldset[disabled] .btn-success:active,
+.btn-success.disabled.active,
+.btn-success[disabled].active,
+fieldset[disabled] .btn-success.active {
+    background-color: #18BC9C;
+    border-color: #18BC9C;
+}
+
+.btn-success .badge {
+    color: #18BC9C;
+    background-color: white;
+}
+
+.btn-social {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border: 2px solid white;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 45px;
+}
+
+.scroll-top {
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    width: 50px;
+    height: 50px;
+    z-index: 1049;
+}
+
+.scroll-top .btn {
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    line-height: 28px;
+}
+
+.trending-modal .modal-content {
+    border-radius: 0;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    min-height: 100%;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.trending-modal .modal-content h2 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.trending-modal .modal-content img {
+    margin-bottom: 30px;
+}
+
+.trending-modal .modal-content .item-details {
+    margin: 30px 0;
+}
+
+.trending-modal .close-modal {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+}
+
+.trending-modal .close-modal:hover {
+    opacity: 0.3;
+}
+
+.trending-modal .close-modal .lr {
+    height: 75px;
+    width: 1px;
+    margin-left: 35px;
+    background-color: #2C3E50;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    /* IE 9 */
+    -webkit-transform: rotate(45deg);
+    /* Safari and Chrome */
+    z-index: 1051;
+}
+
+.trending-modal .close-modal .lr .rl {
+    height: 75px;
+    width: 1px;
+    background-color: #2C3E50;
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(90deg);
+    /* Safari and Chrome */
+    z-index: 1052;
+}
+
+.trending-modal .modal-backdrop {
+    opacity: 0;
+    display: none;
+}
+
+#skipnav a {
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    color: white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    border-bottom-right-radius: 8px;
+    background: transparent;
+    transition: top 1s ease-out, background 1s linear;
+    z-index: 2000;
+}
+
+#skipnav a:focus {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: #18BC9C;
+    outline: 0;
+    transition: top 0.1s ease-in, background 0.5s linear;
+}
+
+div#maincontent {
+    outline: none;
+}
+
+#content {
+    width: 100%;
+}
+
+#preview {
+    margin-top: 10px;
+}
+
+#legend {
+    display: inline-block;
+    position: relative;
+    left: 8px;
+}
+
+#legend_container {
+    position: absolute;
+    right: 0;
+    bottom: 26px;
+    width: 0;
+}
+
+#line_container,
+#scatter_container {
+    position: relative;
+    display: inline-block;
+}
+
+#scatter_container {
+    margin-bottom: 30px;
+}
+
+#smoother {
+    margin: 0 0 10px 16px;
+    width: 100px;
+}
+
+.rickshaw_graph .detail {
+    left: -1000;
+}
+
+#chart_container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#side_panel {
+    padding: 0 20px 20px 0;
+    /*display: inline-block;*/
+    vertical-align: top;
+}
+
+#side_panel section {
+    color: #505050;
+    font-size: 12px;
+}
+
+#side_panel section h6 {
+    margin: 0 0 1em 0;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+#side_panel .ui-slider-horizontal {
+    height: 1px !important;
+    border-color: #e0e0e0;
+    margin-bottom: 10px;
+}
+
+#side_panel .ui-slider-handle {
+    border-color: #a0a0a0;
+    height: 9px !important;
+    width: 9px !important;
+    top: -5px !important;
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+}
+
+#legend {
+    background-color: white;
+    margin-left: 0;
+    padding: 0;
+    left: 0;
+}
+
+#legend .label {
+    color: #404040;
+}
+
+#legend .action {
+    color: black;
+    opacity: 0.5;
+}
+
+#legend ul {
+    padding: 0;
+}
+
+#smoother {
+    margin: 5px 0 0 10px;
+    width: 90%;
+}
+
+label.disabled {
+    opacity: 0.4;
+}
+
+#renderer_form.toggler {
+    display: block;
+    margin: 0;
+}
+
+#renderer_form.toggler input[type=radio]:checked {
+    outline: 2px solid steelblue;
+}
+
+#renderer_form.toggler input[type=radio] {
+    -moz-appearance: button;
+    background: white;
+    margin: 0 7px;
+    width: 39px;
+    height: 26px;
+    position: absolute;
+}
+
+#renderer_form.toggler label {
+    display: inline-block;
+    padding: 0;
+    width: 39px;
+    padding-top: 27px;
+    text-align: center;
+    font-size: 10px;
+    color: #808080;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 0 7px;
+    cursor: pointer;
+}
+
+#interpolation_form,
+#offset_form {
+    vertical-align: top;
+    display: inline-block;
+    width: 45%;
+}
+
+#interpolation_form label,
+#offset_form label {
+    display: block;
+}
+
+label[for=area] {
+    background: url(../images/om_stack.png);
+}
+
+label[for=line] {
+    background: url(../images/om_lines.png);
+}
+
+label[for=bar] {
+    background: url(../images/om_bar.png);
+}
+
+label[for=scatter] {
+    background: url(../images/om_scatter.png);
+}
+
+#offset_form label,
+#interpolation_form label {
+    background-repeat: no-repeat;
+    background-position: 2em center;
+    cursor: pointer;
+    cursor: hand;
+}
+
+#offset_form label span,
+#interpolation_form label span {
+    padding-left: 36px;
+}
+
+label[for=stack] {
+    background-image: url(../images/offset_stack.png);
+}
+
+label[for=pct] {
+    background-image: url(../images/offset_pct.png);
+}
+
+label[for=stream] {
+    background-image: url(../images/offset_stream.png);
+}
+
+label[for=value] {
+    background-image: url(../images/offset_value.png);
+}
+
+label[for=cardinal] {
+    background-image: url(../images/interp_cardinal.png);
+}
+
+label[for=linear] {
+    background-image: url(../images/interp_linear.png);
+}
+
+label[for=step] {
+    background-image: url(../images/interp_step.png);
+}
+
+
+/*ToolTip for barchart*/
+
+.d3-tip {
+    line-height: 1;
+    font-weight: bold;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 2px;
+}
+
+
+/* Creates a small triangle extender for the tooltip */
+
+.d3-tip:after {
+    box-sizing: border-box;
+    display: inline;
+    font-size: 10px;
+    width: 100%;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.8);
+    content: "\25BC";
+    position: absolute;
+    text-align: center;
+}
+
+
+/* Style northward tooltips differently */
+
+.d3-tip.n:after {
+    margin: -1px 0 0 0;
+    top: 100%;
+    left: 0;
+}
+
+.image-cropper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.flag {
+    height: 250px;
+    width: 300px;
+}
+
+.player-btn {
+    display: inline-block;
+    box-shadow: none;
+    appearance: none;
+    border: 0;
+    outline: 0;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    height: 45px;
+    line-height: 10px;
+    padding: 0 30px;
+    font-size: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all .5s;
+    transition-timing-function: cubic-bezier(0.2, 3, 0.4, 1);
+    user-select: none;
+    margin-top: 100px;
+}
+
+.player-btn:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.player-btn:active {
+    transform: scale(1.05, 1.05);
+}
+
+.player-img-container {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.player-img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+
+.player-name {
+    font-size: 20px;
+}
+
+#close-specific-view {
+    cursor: pointer;
+    float: right;
+    z-index: 1;
+}

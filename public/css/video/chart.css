@@ -1,0 +1,125 @@
+  .sentiment--line {
+      fill: transparent;
+      clip-path: url(#clip);
+      stroke-width: 2px;
+      /* stroke-dasharray: 3, 2; */
+  }
+  
+  .sentiment--pos {
+      stroke: #00B909;
+  }
+  
+  .sentiment--neg {
+      stroke: #C60606;
+  }
+  
+  .zoom {
+      cursor: move;
+      fill: none;
+      pointer-events: all;
+  }
+  
+  .event-points {
+      font-size: 20px;
+  }
+  
+  .event-time {
+      font-size: 15px;
+      fill: white;
+      transform: translate(1px, 0);
+  }
+  
+  .point {
+      clip-path: url(#clip);
+      fill: white;
+      stroke-width: 2px;
+  }
+  
+  .line {
+      fill: none;
+      stroke: #6F257F;
+      stroke-width: 5px;
+  }
+  
+  .hover-line {
+      stroke: white;
+  }
+  
+  .line-hover-line {
+      stroke: white;
+      stroke-dasharray: 3, 3;
+      stroke-opacity: 0.6;
+  }
+  
+  .tweet {
+      position: absolute;
+      text-align: center;
+      width: 200px;
+      padding: 10px;
+      font-size: 12px;
+      background: black;
+      color: white;
+      border-radius: 5px;
+      border: 0px;
+      pointer-events: none;
+  }
+  
+  .event-tooltip-text {
+      position: absolute;
+      text-align: center;
+      width: 200px;
+      padding: 10px;
+      font-size: 12px;
+      background: rgba(54, 61, 82, 0.99);
+      color: white;
+      border-radius: 5px;
+      border: 0px;
+      pointer-events: none;
+  }
+  
+  .line-tooltip-text div {
+      position: absolute;
+      text-align: center;
+      color: white;
+      font-size: 12px;
+      border-radius: 5px;
+      background: rgba(54, 61, 82, 0.8);
+      padding: 5px;
+      border: 0px;
+      pointer-events: none;
+  }
+  
+  .events-rect {
+      fill: rgba(54, 61, 82, 0.60);
+  }
+  
+  .segment-clicked-rect {
+      fill: rgba(54, 61, 82, 0.60);
+  }
+  
+  .emoji {
+      height: 40px;
+      font-size: 40px;
+  }
+  
+  .axis--y {
+      /* stroke: white; */
+      display: none;
+  }
+  
+  .pos-point {
+      animation: pulse 2s ease infinite
+  }
+  
+  @keyframes pulse {
+      0% {
+          transform: scale(0.5);
+          transform-origin: center center;
+          opacity: 0
+      }
+      100% {
+          transform: scale(2.5);
+          transform-origin: center center;
+          opacity: 1
+      }
+  }
